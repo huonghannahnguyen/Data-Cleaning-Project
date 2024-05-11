@@ -1,5 +1,7 @@
 # Data-Cleaning-Project
 PostgreSQL - Nashville Housing Data Cleaning
+Nashville Housing Dataset link [
+](https://www.kaggle.com/datasets/bvanntruong/housing-sql-project)
 
 -- Create table 'nashvillehousing' and import data into postgreSQL
 
