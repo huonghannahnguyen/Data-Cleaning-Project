@@ -9,7 +9,7 @@ CREATE TABLE nashvillehousing (uniqueID integer, parcelID integer, land_use text
 							   owner_address varchar, acreage decimal, tax_district text,
 							   land_value integer, building_value integer, total_value integer,
 							   year_build integer, bedroom integer, fullbath integer, halfbath integer
-							  )
+							  );
 ALTER TABLE nashvillehousing
 	ALTER COLUMN sale_date TYPE varchar,
 	ALTER COLUMN legal_ref TYPE varchar,
