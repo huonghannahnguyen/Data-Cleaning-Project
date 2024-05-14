@@ -6,13 +6,11 @@ Nashville Housing Dataset link https://www.kaggle.com/datasets/bvanntruong/housi
 
 -- Create table 'nashvillehousing' and import data into postgreSQL
 
-	CREATE TABLE nashvillehousing (uniqueID integer, parcelID integer, land_use text, property_address varchar, sale_date date, sale_price integer, legal_ref char, sold_as_vacant text, owner_name varchar, owner_address varchar, acreage decimal, tax_district text, land_value integer, building_value integer, total_value integer, year_build integer, bedroom integer, fullbath integer, halfbath integer);
-
-	ALTER TABLE nashvillehousing
- 	ALTER COLUMN sale_date TYPE varchar,
- 	ALTER COLUMN legal_ref TYPE varchar,
- 	ALTER COLUMN parcelID TYPE varchar,
- 	ALTER COLUMN sale_price TYPE money;
+	CREATE TABLE nashvillehousing (uniqueID integer, parcelID varchar, land_use text,
+ 	property_address varchar, sale_date varchar, sale_price money, legal_ref varchar, 
+  	sold_as_vacant text, owner_name varchar, owner_address varchar, acreage decimal, 
+   	tax_district text, land_value integer, building_value integer, total_value integer, 
+    	year_build integer, bedroom integer, fullbath integer, halfbath integer);
 
 -- Import Nashville Housing CSV file into postgreSQL, and overview the table
 
